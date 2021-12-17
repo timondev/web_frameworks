@@ -2,6 +2,9 @@ FROM ubuntu:20.04
 
 RUN \
 # Update and get dependencies
+    apt-get update && \
+    apt-get install -y software-properties-common && \
+    apt-get update && \
     add-apt-repository ppa:ondrej/php -y && \
     apt-get update && \
     apt-get install -y \
