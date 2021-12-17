@@ -18,7 +18,7 @@ RUN \
          "   root /var/www; \n" \
          "   location ~ php/.* { \n" \
          "     include snippets/fastcgi-php.conf; \n" \
-         "     fastcgi_param HTTP_PROXY ""; \n" \
+         "     fastcgi_param HTTP_PROXY \"\"; \n" \
          "     fastcgi_pass unix:/run/php/php8.1-fpm.sock; \n" \
          "   } \n" \
          " } \n" \
