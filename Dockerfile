@@ -25,7 +25,7 @@ RUN \
          "" > /etc/nginx/sites-enabled/web.conf && \
     \
     echo \
-         "hello world\n"
+         "hello world\n" \
          "" > /var/www/hello_world.php && \
     \
     echo \
