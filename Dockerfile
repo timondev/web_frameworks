@@ -29,7 +29,7 @@ RUN \
          "" > /var/www/hello_world.php && \
     \
     echo \
-         "<?php echo password_hash(\"hello_world\", PASSWORD_DEFAULT); ?>\n"
+         "<?php echo password_hash(\"hello_world\", PASSWORD_DEFAULT); ?>\n" \
          "" > /var/www/hash_password.php && \
     update-rc.d php8.1-fpm enable && \
     update-rc.d nginx enable
